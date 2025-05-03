@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical|horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_gravity="left"
+            android:id="@+id/btn_back"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_types"
+        android:background="@drawable/ans_box"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/back">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/ll_easy"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tv_easy"
+                android:background="@drawable/btn_homescreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EASY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/ll_medium"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tv_medium"
+                android:background="@drawable/btn_homescreen"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEDIUM" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/ll_hard"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tv_hard"
+                android:background="@drawable/btn_homescreen"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HARD" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_complex"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tv_complex"
+                android:background="@drawable/btn_homescreen"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMPLEX" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:gravity="center"
+                    android:id="@+id/iv_add"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@null"
+                    android:drawableStart="@drawable/checkbox_add" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:gravity="center"
+                    android:id="@+id/iv_sub"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@null"
+                    android:drawableStart="@drawable/toggle_sub" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:gravity="center"
+                    android:id="@+id/iv_mul"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@null"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/toggle_mul" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:gravity="center"
+                    android:id="@+id/iv_div"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@null"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/toggle_div" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tv_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/ll_types"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="@dimen/heading"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_homescreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PLAY GAME" />
+    </LinearLayout>
+</RelativeLayout>

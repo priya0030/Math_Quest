@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/iv_policy"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_privacy" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/back">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_play"
+            android:background="@drawable/btn_homescreen"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+
+            <TextView
+                android:textSize="@dimen/heading"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_score"
+            android:background="@drawable/btn_homescreen"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:textSize="@dimen/heading"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score Board" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_share"
+            android:background="@drawable/btn_homescreen"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:textSize="@dimen/heading"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Share App" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_rate"
+            android:background="@drawable/btn_homescreen"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:textSize="@dimen/heading"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rate Us" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
